@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=REM:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/index.css">
+
+  <title>Мой список дел</title>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav_link button">
+          <div>
+            <span class="material-symbols-outlined button__icon">
+              home
+            </span>
+          </div>
+          <div>
+            На главную
+          </div>
+        </a>
+        <a href="new.html" class=" header__nav_link button">
+          <div>
+            <span class="material-symbols-outlined button__icon">
+              add_circle
+            </span>
+          </div>
+          <div>
+            Создать
+          </div>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+
+
+      
+      <div class="wellcome">
+        <h1>Создать новое дело</h1>
+        <p class="wellcome__text">
+          Привет! Давай создадим новое дело, <br>чтобы не забыть его!
+        </p>
+        <img src="/images/bg.svg" alt="" class="wellcome__img">
+      </div>
+      <div class="todos">
+        <form action="/add" name="add" method="post" class="todos__form-add">
+          <label for="text">
+            Задача:
+          </label>
+          <input type="text" name="text" class="todos__input">
+          <button type="submit" class="button todos__item_button_add">            
+            <span class="material-symbols-outlined button__icon">
+              add_circle
+            </span>
+            <div>
+              Добавить
+            </div>
+          </button>
+        </form>
+
+
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+  </main>
+  <footer>
+  </footer>  
+</body>
+</html>
