@@ -1,0 +1,16 @@
+<div class="wellcome">
+  <h1>{{ h1 }}</h1>
+  <p class="wellcome__text">
+    {{{ text }}}
+  </p>
+  <img src="/images/bg.svg" alt="" class="wellcome__img">
+</div>
+<div class="todos">
+  {{#if list.length}}
+    <ul class="todos__list">
+      {{#each list}}
+        {{> card }}
+      {{/each}}
+    </ul>
+  {{/if}}
+</div>

@@ -1,0 +1,23 @@
+<div class="wellcome">
+  <h1>{{ h1 }}</h1>
+  <p class="wellcome__text">
+    {{{ text }}}
+  </p>
+  <img src="/images/bg.svg" alt="" class="wellcome__img">
+</div>
+<div class="todos">
+  <form action="/add" name="add" method="post" class="todos__form-add">
+    <label for="text">
+      Задача:
+    </label>
+    <input type="text" name="text" class="todos__input">
+    <button type="submit" class="button todos__item_button_add">            
+      <span class="material-symbols-outlined button__icon">
+        add_circle
+      </span>
+      <div>
+        Добавить
+      </div>
+    </button>
+  </form>
+</div>

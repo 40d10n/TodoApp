@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=REM:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/index.css">
+
+  <title>Мой список дел</title>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav_link button">
+          <div>
+            <span class="material-symbols-outlined button__icon">
+              home
+            </span>
+          </div>
+          <div>
+            На главную
+          </div>
+        </a>
+        <a href="new.html" class=" header__nav_link button">
+          <div>
+            <span class="material-symbols-outlined button__icon">
+              add_circle
+            </span>
+          </div>
+          <div>
+            Создать
+          </div>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="wellcome">
+        <h1>Список дел</h1>
+        <p class="wellcome__text">
+          Привет! Давай составим список дел, <br>чтобы ничего не забыть!
+        </p>
+        <img src="/images/rrr.jpg" alt="" class="wellcome__img">
+      </div>
+      <div class="todos">
+        <ul class="todos__list">
+          <li class="todos__item">
+            <form action="/delete/1" method="post" class="todos__item_form-delete">
+              <input type="hidden" name="_id" value="1">
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  delete
+                </span>
+              </button>
+            </form>
+            <form action="/complete/1" method="post" class="todos__item_form-todo">
+              <input type="hidden" name="_id" value="1">
+              <div class="todos__item_form-text">
+                Покормить кошку
+              </div>
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  circle
+                </span>
+              </button>
+            </form>
+          </li>
+          <li class="todos__item">
+            <form action="/delete/1" method="post" class="todos__item_form-delete">
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  delete
+                </span>
+              </button>
+            </form>
+            <form action="/complete/1" method="post" class="todos__item_form-todo">
+              <div class="todos__item_form-text">
+                Выгулять собаку
+              </div>
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  circle
+                </span>
+              </button>
+            </form>
+          </li>
+          <li class="todos__item todos__item_complited">
+            <form action="/delete/1" method="post" class="todos__item_form-delete">
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  delete
+                </span>
+              </button>
+            </form>
+            <form action="/complete/1" method="post" class="todos__item_form-todo">
+              <div class="todos__item_form-text">
+                Наконец-таки поправить вертстку сайта и разобраться как же работает этот замечательный Javascript.
+              </div>
+              <button type="submit" class="todos__item_button-action">
+                <span class="material-symbols-outlined">
+                  check_circle
+                </span>
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer>
+  </footer>  
+</body>
+</html>
