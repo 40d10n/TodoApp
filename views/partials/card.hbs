@@ -1,0 +1,26 @@
+
+<li class="todos__item {{completedClass}}">
+  <form action="/delete" method="post" class="todos__item_form-delete">
+    <input type="hidden" name="id" value="{{id}}">
+    <button type="submit" class="todos__item_button-action">
+      <span class="material-symbols-outlined">
+        delete
+      </span>
+    </button>
+  </form>
+  <form action="/complete" method="post" class="todos__item_form-todo">
+    <input type="hidden" name="id" value="{{id}}">
+    <div class="todos__item_form-text">
+      {{ name }}
+    </div>
+    <button type="submit" class="todos__item_button-action">
+      <span class="material-symbols-outlined">
+        {{#if completed}}
+          check_circle
+        {{else}}
+          circle
+        {{/if}}        
+      </span>
+    </button>
+  </form>
+</li>
