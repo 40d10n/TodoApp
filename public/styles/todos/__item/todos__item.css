@@ -1,0 +1,4 @@
+.todos__item {
+  display: flex;
+  margin-bottom: 20px;
+}

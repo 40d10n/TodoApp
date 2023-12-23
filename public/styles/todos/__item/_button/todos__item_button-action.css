@@ -1,0 +1,10 @@
+.todos__item_button-action {
+  border: none;
+  background-color: transparent;
+  color: #000000;  
+}
+
+.todos__item_button-action:hover {
+  cursor: pointer;
+  color: #00c241;
+}

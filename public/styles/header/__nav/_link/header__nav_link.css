@@ -1,0 +1,5 @@
+.header__nav_link {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}

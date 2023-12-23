@@ -1,0 +1,5 @@
+.todos__item_button_add {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}

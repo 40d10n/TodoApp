@@ -1,0 +1,13 @@
+.todos__item_form-todo {
+  width: 80%;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: 2px solid #ffde70;
+  box-shadow: 2px 2px 3px #ebebeb;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  
+  display: flex;
+  justify-content: space-between;
+}

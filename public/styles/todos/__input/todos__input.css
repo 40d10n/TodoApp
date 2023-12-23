@@ -1,0 +1,10 @@
+.todos__input {
+  margin: 0 20px;
+  padding: 5px;
+  width: 250px;
+  width: 80%;
+  height: 24px;
+  border: 2px solid #f7a40a;
+  box-shadow: 2px 2px 3px #ebebeb;
+  border-radius: 5px;
+}

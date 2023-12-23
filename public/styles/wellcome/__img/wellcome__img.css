@@ -1,0 +1,7 @@
+.wellcome__img {
+  position: absolute;
+  width: 700px;
+  top: -50%;
+  left: 30%;
+  z-index: -1;
+}
